@@ -1,1 +1,63 @@
-// Specific CSS for your home-page
+.home-first {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $gray;
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+    color: $gray;
+    margin-bottom: 25px;
+  }
+}
+
+.home-img {
+  width: 50vw;
+}
+
+body {
+  background: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    width: 140px;
+    height: 32vh;
+    margin-bottom: 15px;
+  }
+  width: 80vw;
+  padding: 30px 70px;
+  margin: 40px 0px;
+  justify-content: space-around;
+  text-align: center;
+  p {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .icon {
+    width: 20vw;
+    padding: 0px 30px;
+  }
+}
+
+.home {
+  padding: 0px 8vw;
+}
+
+.home-second {
+  text-align: center;
+  h2 {
+    font-size: 28px;
+    color: $blue;
+    margin-bottom: 30px;
+  }
+}

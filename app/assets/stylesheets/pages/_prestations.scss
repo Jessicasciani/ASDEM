@@ -1,0 +1,23 @@
+.presta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 50px;
+  padding: 30px 50px;
+  border-radius: 20px;
+  h3 {
+    color: $blue;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.list-presta {
+  width: 500px;
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin: 20px auto;
+}

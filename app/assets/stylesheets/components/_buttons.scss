@@ -1,0 +1,28 @@
+.btn-blue {
+  background: $blue;
+  color: white;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 40px;
+  width: 250px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  &:hover {
+    color: white;
+  }
+}
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+
+.mb-20 {
+  margin-bottom: 20px;
+}
