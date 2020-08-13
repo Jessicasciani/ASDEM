@@ -1,0 +1,64 @@
+.form-devis {
+  display: block;
+  text-align: center;
+  h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: $light-gray;
+    text-align: left;
+  }
+  input {
+    background: #D7F3F8;
+    color: $light-gray;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+  }
+  .section {
+    margin: 40px auto;
+  }
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  input {
+    margin-bottom: 7px;
+    margin-right: 10px;
+  }
+  label {
+    margin-right: 40px;
+  }
+}
+
+.section-checks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+
+@media screen and (min-width: 661px) {
+  .form-devis {
+    margin: 20px 25vw;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .form-devis {
+    margin: 20px 50px;
+  }
+}
+

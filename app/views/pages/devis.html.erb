@@ -1,1 +1,106 @@
-<h1 class="title">Demande de devis</h1>
+<div class="devis">
+
+  <h1 class="title">Demande de devis</h1>
+
+  <form action="https://formspree.io/xpzynjdq" method="POST" class="form-devis">
+
+    <div class="section">
+      <h3>Informations générales</h3>
+      <input type="text" name="name" placeholder="Nom et Prénom">
+      <input type="email" name="_replyto" placeholder="Email">
+      <input type="text" name="tel" placeholder="Téléphone">
+      <input type="text" name="adresse_depart" placeholder="Adresse de départ">
+      <input type="text" name="adresse-arrivee" placeholder="Adresse d'arrivée">
+      <input type="date" name="date" placeholder="Date d'emménagement souhaitée">
+      <input type="text" name="flexiblite" placeholder="Flexibilité (+/- jours)">
+    </div>
+
+    <div class="section">
+      <h3>Formule souhaitée</h3>
+      <div class="section-checks">
+        <div class="check">
+          <input type="checkbox" name="self">
+          <label for="self">Self</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" name="standard">
+          <label for="standard">Standard</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" name="standard-plus">
+          <label for="standard-plus">Standard Plus</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" name="luxe">
+          <label for="luxe">Luxe</label>
+        </div>
+      </div>
+    </div>
+
+
+  <h3>Volume</h3>
+
+  <div class="d-flex"><input type="text" name="volume" placeholder="Volume"><p>m3</p></div>
+
+
+  <div class="section">
+    <h3>Informations de départ</h3>
+
+    <div class="section-checks">
+      <div class="check">
+        <input type="radio" name="Appartement">
+        <label for="Appartement">Appartement</label>
+      </div>
+      <div class="check">
+        <input type="radio" name="maison">
+        <label for="maison">Maison</label>
+      </div>
+      <div class="check">
+        <input type="radio" name="Garde-meuble">
+        <label for="Garde-meuble">Garde-meuble</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-center">
+      <div class="check">
+        <input type="checkbox" name="ascenseur">
+        <label for="ascenseur">Ascenseur</label>
+      </div>
+      <input type="text" name="nombre_de_pieces" placeholder="Nombre de pièces">
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Informations de d'arrivée</h3>
+
+    <div class="section-checks">
+      <div class="check">
+        <input type="radio" name="Appartement">
+        <label for="Appartement">Appartement</label>
+      </div>
+      <div class="check">
+        <input type="radio" name="maison">
+        <label for="maison">Maison</label>
+      </div>
+      <div class="check">
+        <input type="radio" name="Garde-meuble">
+        <label for="Garde-meuble">Garde-meuble</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-center">
+      <div class="check">
+        <input type="checkbox" name="ascenseur">
+        <label for="ascenseur">Ascenseur</label>
+      </div>
+      <input type="text" name="nombre_de_pieces" placeholder="Nombre de pièces">
+    </div>
+  </div>
+
+    <input type="submit" value="Faire ma demande de devis" class="m-auto" id="btn-blue">
+  </form>
+
+
+</div>
+
+
