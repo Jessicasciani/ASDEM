@@ -48,6 +48,21 @@
   justify-content: center;
 }
 
+.devis-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  input {
+    width: 90px;
+    margin-right: 40px;
+  }
+}
+
+.devis-section label {
+  text-align: left;
+  font-size: 14px;
+  width: 120px;
+}
 
 
 @media screen and (min-width: 661px) {
@@ -60,5 +75,17 @@
   .form-devis {
     margin: 20px 50px;
   }
+}
+
+#collapseExample h3 {
+  color: $blue;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+#calcul {
+  text-align: center;
+  color: $blue;
 }
 

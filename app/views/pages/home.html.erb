@@ -3,7 +3,7 @@
     <div>
       <h1>Votre déménagement sur mesure</h1>
       <p>Déménager avec Asdem Conseil, c’est mettre à votre disposition tout notre savoir-faire, y compris en manutation lourde.</p>
-      <a class="btn-blue">Demander un devis</a>
+      <%= link_to "Demander un devis", devis_path, class: "btn-blue" %>
     </div>
     <%= image_tag "home-img.png", class: "home-img" %>
   </div>
@@ -17,17 +17,17 @@
   <div class="icons">
     <div class="icon">
       <%= image_tag "truck.png", class: "home-img" %>
-      <h3>Particuliers ou entreprises</h3>
+      <h3><b>Particuliers ou entreprises</b></h3>
       <p>Déménagez avec du personnel qualifié à bord de camions capitonnés, équipés de matériel adapté</p>
     </div>
     <div class="icon">
       <%= image_tag "move.png", class: "home-img" %>
-      <h3>Facilitez vous la vie</h3>
+      <h3><b>Facilitez vous la vie</b></h3>
       <p>Nous mettons en place des options sur mesure afin de s'adapter à vos besoins. Une installation sans encombres et sans contraintes !</p>
     </div>
     <div class="icon">
       <%= image_tag "happy.png", class: "home-img" %>
-      <h3>Nos points forts</h3>
+      <h3><b>Nos points forts</b></h3>
       <p>Pianos, billards, coffre-fort, oeuvres d'arts, lustres, etc.. Nous avons le savoir-faire pour transporter l'ensemble de ces objets particuliers et fragiles.</p>
     </div>
   </div>

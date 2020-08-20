@@ -6,12 +6,12 @@
 
     <div class="section">
       <h3>Informations générales</h3>
-      <input type="text" name="name" placeholder="Nom et Prénom">
-      <input type="email" name="_replyto" placeholder="Email">
-      <input type="text" name="tel" placeholder="Téléphone">
+      <input type="text" name="Nom et prénom" placeholder="Nom et Prénom">
+      <input type="email" name="Adresse mail" placeholder="Email">
+      <input type="text" name="Tel" placeholder="Téléphone">
       <input type="text" name="adresse_depart" placeholder="Adresse de départ">
-      <input type="text" name="adresse-arrivee" placeholder="Adresse d'arrivée">
-      <input type="date" name="date" placeholder="Date d'emménagement souhaitée">
+      <input type="text" name="adresse_arrivee" placeholder="Adresse d'arrivée">
+      <input type="date" name="date_souhaitee" placeholder="Date d'emménagement souhaitée">
       <input type="text" name="flexiblite" placeholder="Flexibilité (+/- jours)">
     </div>
 
@@ -19,28 +19,256 @@
       <h3>Formule souhaitée</h3>
       <div class="section-checks">
         <div class="check">
-          <input type="checkbox" name="self">
+          <input type="radio" name="Formule" value="Self">
           <label for="self">Self</label>
         </div>
         <div class="check">
-          <input type="checkbox" name="standard">
+          <input type="radio" name="Formule" value="standard">
           <label for="standard">Standard</label>
         </div>
         <div class="check">
-          <input type="checkbox" name="standard-plus">
+          <input type="radio" name="Formule" value="standard-plus">
           <label for="standard-plus">Standard Plus</label>
         </div>
         <div class="check">
-          <input type="checkbox" name="luxe">
+          <input type="radio" name="Formule" value="luxe">
           <label for="luxe">Luxe</label>
         </div>
       </div>
     </div>
 
 
-  <h3>Volume</h3>
+  <div class="section">
+    <h3>Volume</h3>
 
-  <div class="d-flex"><input type="text" name="volume" placeholder="Volume"><p>m3</p></div>
+    <div class="d-flex justify-center">
+      <input id="vol" style="margin: 0 20px;" type="text" name="volume_m3" placeholder="Volume"><p>m3</p>
+      <p style="margin: 0 20px;">OU</p>
+      <p style="margin: 0 20px;"><a class="btn-blue" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Calculer mon volume</a></p>
+    </div>
+  </div>
+
+  <div class="collapse" id="collapseExample">
+    <h3>CUISINE</h3>
+
+    <div class="devis-section">
+      <div>
+        <label for="Réfrigérateur">Réfrigérateur</label>
+        <input  class="sum_1" type="number" name="Réfrigérateur" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Lave vaiselle">Lave vaiselle</label>
+        <input  class="sum_half" type="number" name="Lave vaisselle" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Four">Four</label>
+        <input  class="sum_half" type="number" name="Four" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Cuisinière">Cuisinière</label>
+        <input  class="sum_half" type="number" name="Cuisinière" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Lave linge">Lave linge</label>
+        <input  class="sum_half" type="number" name="Lave linge" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Sèche linge">Sèche linge</label>
+        <input  class="sum_half" type="number" name="Sèche linge" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Micro-ondes">Micro-ondes</label>
+        <input  class="sum_quarter" type="number" name="Micro-ondes" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Plaque de cuisson">Plaque de cuisson</label>
+        <input  class="sum_quarter" type="number" name="Plaque de cuisson" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Congélateur">Congélateur</label>
+        <input  class="sum_1" type="number" name="Congélateur" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Lot de petits robots">Lot de petits robots</label>
+        <input  class="sum_half" type="number" name="Lot de petits robots" placeholder="0" value="0">
+      </div>
+    </div>
+
+    <h3>SALON</h3>
+
+    <div class="devis-section">
+      <div>
+        <label for="Canapé">Canapé</label>
+        <input  class="sum_2" type="number" name="Canapé" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Réfrigérateur">Canapé d'angle</label>
+        <input  class="sum_5" type="number" name="Canapé d'angle" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Clic-clac bz">Clic-clac bz</label>
+        <input  class="sum_2" type="number" name="Clic-clac bz" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Fauteuil">Fauteuil</label>
+        <input  class="sum_half" type="number" name="Fauteuil" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Chaise/Tabouret">Chaise/Tabouret</label>
+        <input  class="sum_quarter" type="number" name="Chaise/Tabouret" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Meuble TV">Meuble TV</label>
+        <input  class="sum_1" type="number" name="Meuble TV" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Télévision">Télévision</label>
+        <input  class="sum_quarter" type="number" name="Télévision" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Bibliothèque">Bibliothèque</label>
+        <input  class="sum_3" type="number" name="Bibliothèque" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Table basse">Table basse</label>
+        <input  class="sum_half" type="number" name="Table basse" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Tapis">Tapis</label>
+        <input  class="sum_half" type="number" name="Tapis" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Etagère">Etagère</label>
+        <input  class="sum_half" type="number" name="Etagère" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Aspirateur">Aspirateur</label>
+        <input  class="sum_quarter" type="number" name="Aspirateur" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Chaise bébé">Chaise bébé</label>
+        <input  class="sum_quarter" type="number" name="Chaise bébé" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Gros buffet">Gros buffet</label>
+        <input  class="sum_2" type="number" name="Gros buffet" placeholder="0" value="0">
+      </div>
+    </div>
+
+    <h3>CHAMBRE</h3>
+
+    <div class="devis-section">
+      <div>
+        <label for="Lit 1 place">Lit 1 place</label>
+        <input  class="sum_1" type="number" name="Lit 1 place" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Lit 2 places">Lit 2 places</label>
+        <input  class="sum_2" type="number" name="Lit 2 places" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Très grand lit">Très grand lit</label>
+        <input  class="sum_3" type="number" name="Très grand lit" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Lit superposé">Lit superposé</label>
+        <input  class="sum_2" type="number" name="Lit superposé" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Mezzanine">Mezzanine</label>
+        <input  class="sum_2" type="number" name="Mezzanine" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Bureau">Bureau</label>
+        <input  class="sum_1" type="number" name="Bureau" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Table de chevet">Table de chevet</label>
+        <input  class="sum_quarter" type="number" name="Table de chevet" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Miroir">Miroir</label>
+        <input  class="sum_quarter" type="number" name="Miroir" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Lit bébé">Lit bébé</label>
+        <input  class="sum_half" type="number" name="Lit bébé" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Armoire 4 portes">Armoire 1 porte</label>
+        <input  class="sum_1" type="number" name="Armoire 1 porte" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Armoire 2 portes">Armoire 2 portes</label>
+        <input  class="sum_2" type="number" name="Armoire 2 portes" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Armoire 3 portes">Armoire 3 portes</label>
+        <input  class="sum_3" type="number" name="Armoire 3 portes" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Armoire 4 portes">Armoire 4 portes</label>
+        <input  class="sum_4" type="number" name="Armoire 4 portes" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Meuble informatique">Meuble informatique</label>
+        <input  class="sum_1" type="number" name="Meuble informatique" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Imprimante">Imprimante</label>
+        <input  class="sum_quarter" type="number" name="Imprimante" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Coiffeuse">Coiffeuse</label>
+        <input  class="sum_half" type="number" name="Coiffeuse" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Commode">Commode</label>
+        <input  class="sum_1" type="number" name="Commode" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Ecran et tour d'ordinateur">Ecran et tour d'ordinateur</label>
+        <input  class="sum_half" type="number" name="Ecran et tour d'ordinateur" placeholder="0" value="0">
+      </div>
+    </div>
+
+    <h3>AUTRES</h3>
+
+    <div class="devis-section">
+      <div>
+        <label for="Piano droit">Piano droit</label>
+        <input  class="sum_3" type="number" name="Piano droit" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Piano à queue">Piano à queue</label>
+        <input  class="sum_4" type="number" name="Piano à queue" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Moto/scooter">Moto/scooter</label>
+        <input  class="sum_3" type="number" name="Moto/scooter" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Tondeuse">Tondeuse</label>
+        <input  class="sum_half" type="number" name="Tondeuse" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Vélo">Vélo</label>
+        <input  class="sum_1" type="number" name="Vélo" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Table de ping-pong">Table de ping-pong</label>
+        <input  class="sum_3" type="number" name="Table de ping-pong" placeholder="0" value="0">
+      </div>
+      <div>
+        <label for="Autres (précisez)">Autres (précisez)</label>
+        <input type="text" name="Autres (précisez)">
+      </div>
+    </div>
+
+    <p id="calcul">Calculer mon volume total</p>
+    <p id="result"></p>
+
+  </div>
 
 
   <div class="section">
@@ -48,25 +276,25 @@
 
     <div class="section-checks">
       <div class="check">
-        <input type="radio" name="Appartement">
+        <input type="radio" name="logement_depart" value="Appartement">
         <label for="Appartement">Appartement</label>
       </div>
       <div class="check">
-        <input type="radio" name="maison">
+        <input type="radio" name="logement_depart" value="maison">
         <label for="maison">Maison</label>
       </div>
       <div class="check">
-        <input type="radio" name="Garde-meuble">
+        <input type="radio" name="logement_depart" value="Garde-meuble">
         <label for="Garde-meuble">Garde-meuble</label>
       </div>
     </div>
 
     <div class="d-flex justify-center">
       <div class="check">
-        <input type="checkbox" name="ascenseur">
-        <label for="ascenseur">Ascenseur</label>
+        <input type="checkbox" name="ascenseur_depart">
+        <label for="ascenseur_depart">Ascenseur</label>
       </div>
-      <input type="text" name="nombre_de_pieces" placeholder="Nombre de pièces">
+      <input type="text" name="nombre_de_pieces_depart" placeholder="Nombre de pièces">
     </div>
   </div>
 
@@ -75,25 +303,25 @@
 
     <div class="section-checks">
       <div class="check">
-        <input type="radio" name="Appartement">
+        <input type="radio" name="logement_arrivee" value="Appartement">
         <label for="Appartement">Appartement</label>
       </div>
       <div class="check">
-        <input type="radio" name="maison">
+        <input type="radio" name="logement_arrivee" value="maison">
         <label for="maison">Maison</label>
       </div>
       <div class="check">
-        <input type="radio" name="Garde-meuble">
+        <input type="radio" name="logement_arrivee" value="Garde-meuble">
         <label for="Garde-meuble">Garde-meuble</label>
       </div>
     </div>
 
     <div class="d-flex justify-center">
       <div class="check">
-        <input type="checkbox" name="ascenseur">
-        <label for="ascenseur">Ascenseur</label>
+        <input type="checkbox" name="ascenseur_arrivee">
+        <label for="ascenseur_arrivee">Ascenseur</label>
       </div>
-      <input type="text" name="nombre_de_pieces" placeholder="Nombre de pièces">
+      <input type="text" name="nombre_de_pieces_arrivee" placeholder="Nombre de pièces">
     </div>
   </div>
 
@@ -104,3 +332,60 @@
 </div>
 
 
+<script>
+  const bouton = document.getElementById("calcul");
+  const values_one = document.querySelectorAll(".sum_1");
+  const values_half = document.querySelectorAll(".sum_half");
+  const values_quarter = document.querySelectorAll(".sum_quarter");
+  const values_two = document.querySelectorAll(".sum_2");
+  const values_five = document.querySelectorAll(".sum_5");
+  const values_three = document.querySelectorAll(".sum_3");
+  const values_four = document.querySelectorAll(".sum_4");
+  const volume = document.getElementById("vol");
+  const result = document.getElementById("result");
+  bouton.addEventListener("click", (e) => {
+    const array = [];
+    console.log(array)
+    values_one.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value))
+      }
+    });
+    values_half.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value)*0.5)
+      }
+    });
+    values_quarter.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value)*0.25)
+      }
+    });
+    values_two.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value)*2)
+      }
+    });
+    values_three.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value)*3)
+      }
+    });
+    values_five.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value)*5)
+      }
+    });
+    values_four.forEach((i) => {
+      if (i !== 0) {
+        array.push(parseInt(i.value)*4)
+      }
+    });
+    var sum = array.reduce(function(a, b) {
+    return a + b;
+    }, 0);
+    console.log(sum);
+    result.innerHTML = `${sum} m3`
+    vol.value = sum;
+  });
+</script>
