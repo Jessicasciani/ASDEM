@@ -33,11 +33,6 @@
   }
 }
 
-.section-checks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .d-flex {
   display: flex;
@@ -88,4 +83,14 @@
   text-align: center;
   color: $blue;
 }
+
+
+@media only screen and (min-width: 778px) {
+  .section-checks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+}
+
 

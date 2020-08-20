@@ -36,7 +36,7 @@ de leur fragilité.</li>
 
 
 <div class="presta">
-  <%= image_tag "standardplus.png", width: 300 %>
+  <%= image_tag "standardplus.png", width: 300, class: "home-img-hide" %>
   <div>
     <h3>Standard Plus</h3>
     <p class="list-presta">Comprend la formule Standard, ainsi qu'emballage du linge, livres et objets non fragiles</p>
@@ -54,6 +54,6 @@ de leur fragilité.</li>
   <%= image_tag "luxe.png", width: 300 %>
 </div>
 
-<a class="btn-blue m-auto mb-20">Demander un devis</a>
+<%= link_to "Demander un devis", devis_path, class: "btn-blue m-auto mb-20" %>
 
 

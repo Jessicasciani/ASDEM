@@ -24,18 +24,11 @@ body {
 }
 
 .icons {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   img {
     width: 140px;
     height: 32vh;
     margin-bottom: 15px;
   }
-  width: 80vw;
-  padding: 30px 70px;
-  margin: 40px 0px;
-  justify-content: space-around;
   text-align: center;
   p {
     font-size: 14px;
@@ -44,7 +37,6 @@ body {
     font-size: 18px;
   }
   .icon {
-    width: 20vw;
     padding: 0px 30px;
   }
 }
@@ -62,3 +54,26 @@ body {
     margin: 40px 10vw;
   }
 }
+
+@media only screen and (max-width: 778px) {
+  .home-img-hide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 778px) {
+  .icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    padding: 30px 70px;
+    margin: 40px 0px;
+    justify-content: space-around;
+  }
+  .icon {
+    width: 20vw;
+  }
+}
+
+
